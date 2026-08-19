@@ -2,6 +2,7 @@ describe('Alibaba Website - Functional Testing cypress', () => {
   it('Verify Alibaba website loads successfully', () => {
     cy.visit('https://www.alibaba.com/', { timeout: 120000 })
     cy.get('textarea.header-tab-input-textarea', { timeout: 30000 }).should('be.visible')
+    
   })
 
    it('verify search function is working',()=>{
